@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Balla Lompoa Museum | Virtual Tour</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="tour">
+    <button class="menu-toggle" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">BL</span><span><strong>Balla Lompoa</strong><small>Virtual Museum</small></span></a>
+      <nav>
+        <a class="nav-link" data-page-link="home" href="index.html">Beranda</a>
+        <a class="nav-link" data-page-link="tour" href="virtual-tour.html">Virtual Tour Museum</a>
+        <a class="nav-link" data-page-link="site" href="virtual-site.html">Virtual Site</a>
+        <a class="nav-link" data-page-link="collections" href="collections.html">Koleksi Kerajaan</a>
+        <a class="nav-link" data-page-link="culture" href="culture.html">Budaya</a>
+        <a class="nav-link" data-page-link="visitor" href="visitor.html">Pengunjung</a>
+        <a class="nav-link" data-page-link="archive" href="archive.html">Arsip & Publikasi</a>
+      </nav>
+      <div class="sidebar-note"><span>Lokasi</span><strong>Sungguminasa, Kabupaten Gowa</strong></div>
+    </aside>
+    <div class="overlay" aria-hidden="true"></div>
+
+    <main>
+      <section class="section page-head">
+        <p class="eyebrow">Interactive stop</p>
+        <h1>Virtual Tour Museum</h1>
+        <p>Drag the view sideways or use the controls. Select a marker to read a short explanation for each point of interest.</p>
+      </section>
+
+      <section class="section tour-section page-body">
+        <div class="tour-shell">
+          <div class="panorama" role="img" aria-label="Virtual outdoor view of Balla Lompoa Museum">
+            <button class="hotspot hotspot-entrance active" type="button" data-stop="entrance"><span>Entrance</span></button>
+            <button class="hotspot hotspot-gallery" type="button" data-stop="gallery"><span>Gallery</span></button>
+            <button class="hotspot hotspot-regalia" type="button" data-stop="regalia"><span>Regalia</span></button>
+          </div>
+          <aside class="tour-panel" aria-live="polite">
+            <p class="eyebrow">Current stop</p>
+            <h3 id="stop-title">Front Stair and Palace Form</h3>
+            <p id="stop-copy">The raised timber form and broad stair make the building feel ceremonial before visitors even enter. This first view introduces the palace as both architecture and symbol.</p>
+            <div class="tour-controls" aria-label="Virtual tour controls">
+              <button type="button" data-pan="-16" aria-label="Pan left">&lt;</button>
+              <button type="button" data-pan="16" aria-label="Pan right">&gt;</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
